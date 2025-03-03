@@ -5,7 +5,7 @@
       "exclude": ["no-console"]
     }
   },
-  "name": "@charleme/no-console",
+  "name": "@charleme/no-console-log",
   "version": "0.1.0",
   "license": "MIT",
   "exports": "./no-console-log.ts"
