@@ -1,0 +1,12 @@
+{
+  "lint": {
+    "plugins": ["./no-console-log.ts"],
+    "rules": {
+      "exclude": ["no-console"]
+    }
+  },
+  "name": "@charleme/no-console",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./no-console-log.ts"
+}

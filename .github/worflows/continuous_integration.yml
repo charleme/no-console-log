@@ -1,0 +1,23 @@
+name: Continuous Integration
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Deno fmt
+        run: deno fmt --check
+      - name: Deno lint
+        run: deno lint
+      - name: Deno check
+        run: deno check .
+      - name: Deno test
+        run: deno test
